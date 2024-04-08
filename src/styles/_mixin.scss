@@ -1,0 +1,18 @@
+@import 'variables';
+
+@mixin header-text-500 {
+    font-family: $header-font;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+@mixin header-text-300 {
+    font-family: $header-font;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+// mixin hover
+@mixin hoverBtn {
+    background: rgba(255, 255, 255, 0.1);
+}

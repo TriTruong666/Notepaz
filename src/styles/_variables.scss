@@ -1,0 +1,21 @@
+// font family
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+$header-font: "Poppins", sans-serif;
+$header-font2: "Raleway", sans-serif;
+// background
+$page-bg: #1E1E1E;
+$main-note: #1b1b1b;
+$dashboard-bg: #222222;
+$search: rgba(255, 255, 255, 0.1);
+// color
+$primary-color: #3471FF;
+$text-color1: #C8C8C8;
+$secondary-color: rgba(255, 255, 255, 0.4);
+// border && line
+$border1: 1px solid rgba(255, 255, 255, 0.25);
+$border2: 1px solid rgba(255, 255, 255, 0.15);
+$invisible-border: 1px solid transparent;
+$test: 1px solid lime;
+// transition
+$trans300ms: 0.3s ease-in-out;

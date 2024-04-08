@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+.card {
+  width: 100%;
+  height: 200px;
+  border-radius: 0.75rem;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.card .card-container {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card .card-container strong {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: white;
+}
+.card .card-container .text {
+  height: 70%;
+  overflow: hidden;
+  font-size: 0.85rem;
+  margin: 1rem 0;
+}
+.card .card-container .material-symbols-outlined {
+  margin-bottom: 0.25rem;
+  align-self: end;
+  padding: 0.25rem;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.card .card-container .material-symbols-outlined:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.card:hover {
+  border: 1px solid white;
+}/*# sourceMappingURL=Card.css.map */

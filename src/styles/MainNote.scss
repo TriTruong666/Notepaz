@@ -1,0 +1,83 @@
+@import 'mixin';
+@import 'variables';
+
+.main-note {
+    width: 78%;
+    height: 100%;
+    background: $main-note;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        width: 84%;
+        height: 68%;
+
+        input {
+            width: 100%;
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+        .time{
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            span:nth-child(1){
+                font-size: 1.2rem;
+                margin-right: 0.75rem;
+                color: $primary-color;
+            }
+            span:nth-child(2){
+                font-size: 0.9rem;
+                color: $secondary-color;
+            }
+        }
+        .line {
+            margin: 3rem 0;
+            border-top: $border2;
+        }
+
+        main {
+            width: 100%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            textarea {
+                width: 100%;
+                height: 90%;
+                overflow-y: auto;
+                font-size: 1.25rem;
+            }
+            button{
+                margin-top: 2rem;
+                width: 30%;
+                padding: 0.75rem 0;
+                border: $border1;
+                border-radius: 1rem;
+                display: flex;
+                justify-content: center;
+                cursor: pointer;
+                transition: $trans300ms;
+                span:nth-child(2){
+                    font-size: 1rem;
+                    margin: 0 0.5rem;
+                }
+            }
+            button:hover{
+                background: $search;
+            }
+        }
+    }
+}
+.empty{
+    width: 78%;
+    text-align: center;
+}
+.heading-input::placeholder {
+    font-size: 2.5rem;
+}
+
+.text-input::placeholder {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.4);
+}

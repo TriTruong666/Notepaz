@@ -1,0 +1,101 @@
+@import 'mixin';
+@import 'variables';
+
+.dashboard {
+    width: 22%;
+    height: 100%;
+    background: $dashboard-bg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        width: 90%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+
+        .header-text {
+            width: fit-content;
+            font-size: 1.3rem;
+            font-family: $header-font2;
+            color: $primary-color;
+            font-weight: 400;
+        }
+
+        .search-box {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin: 1.5rem 0;
+
+            .search {
+                width: 80%;
+                background: $search;
+                padding: 0.9rem;
+                border: 0.1rem solid transparent;
+                border-radius: 0.5rem;
+                transition: 0.3s ease-in-out;
+                font-size: 0.9rem;
+            }
+
+            .search:hover,
+            .search:focus {
+                border-color: rgba(255, 255, 255, 0.7);
+            }
+
+            .submitBtn {
+                padding: 0.85rem;
+                border: 0.15rem solid transparent;
+                background: $primary-color;
+                border-radius: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+
+                span {
+                    font-size: 1.75rem;
+                }
+            }
+
+            .submitBtn:hover {
+                background: transparent;
+                border: 0.15rem solid rgba(255, 255, 255, 0.7);
+            }
+        }
+
+        .line {
+            margin-bottom: 1.5rem;
+            border-top: $border2;
+        }
+
+        .addBtn {
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 1rem;
+            border: $border1;
+            cursor: pointer;
+            transition: $trans300ms;
+            .add-text {
+                margin: 0 0.5rem;
+                @include header-text-500();
+                font-size: 1rem;
+            }
+        }
+
+        .addBtn:hover {
+            @include hoverBtn();
+        }
+
+        .cards {
+            margin: 1.5rem 0;
+            display: grid;
+            row-gap: 2rem;
+            overflow-y: auto;
+        }
+    }
+}

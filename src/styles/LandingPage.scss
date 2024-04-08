@@ -1,0 +1,101 @@
+@import 'variables';
+@import 'mixin';
+
+.landing {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .intro {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20rem 0;
+
+        .intro-text {
+            width: 30%;
+            text-align: center;
+
+            span {
+                @include header-text-300();
+                font-size: 1.5rem;
+                margin-right: 0.5rem;
+                cursor: default;
+            }
+
+            strong {
+                @include header-text-500();
+                font-size: 1.5rem;
+                cursor: default;
+            }
+        }
+
+        .begin-btn {
+            margin-top: 1rem;
+            width: 14%;
+            padding: 0.6rem 2rem;
+            border-radius: 1rem;
+            border: $border1;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+
+            small {
+                @include header-text-500();
+                font-size: 1rem;
+                margin-left: 0.75rem;
+            }
+        }
+
+        .begin-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+    }
+
+    .info-dev {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .info-text {
+            width: 30%;
+            text-align: center;
+
+            span {
+                @include header-text-300();
+                font-size: 1rem;
+                cursor: default;
+            }
+
+            strong {
+                @include header-text-500();
+                font-size: 1.05rem;
+                margin: 0 0.3rem;
+                cursor: default;
+            }
+        }
+
+        .social {
+            margin-top: 1rem;
+            width: 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                cursor: pointer;
+            }
+
+            img:nth-child(2) {
+                margin-top: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+@import 'mixin';
+@import 'variables';
+
+.card {
+    width: 100%;
+    height: 200px;
+    border-radius: 0.75rem;
+    border: $invisible-border;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+    transition: $trans300ms;
+    cursor: pointer;
+    .card-container {
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        strong{
+            margin-top: 0.5rem;
+            font-size: 1.2rem;
+            color: white;
+        }
+        .text {
+            height: 70%;
+            overflow: hidden;
+            font-size: 0.85rem;
+            margin: 1rem 0;
+        }
+        .material-symbols-outlined{
+            margin-bottom: 0.25rem;
+            align-self: end;
+            padding: 0.25rem;
+            border-radius: 50%;
+            border: $border2;
+            cursor: pointer;
+            transition: $trans300ms;
+        }
+        .material-symbols-outlined:hover{
+            background: $search;
+        }
+    }
+}
+.card:hover{
+    border: 1px solid white;
+}
