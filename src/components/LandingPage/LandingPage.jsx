@@ -27,7 +27,7 @@ class LandingPage extends React.Component {
             <strong>Truong Hoang Tri</strong>
           </div>
           <div className="social">
-            <img onClick={() => this.openLink('https://github.com/TriTruong666')} src={assets.icons.icon1} alt="" />
+            <img onClick={() => this.openLink('https://github.com/TriTruong666/Notepaz')} src={assets.icons.icon1} alt="" />
             <img onClick={() => this.openLink('https://www.instagram.com/medusa_shopz/')} src={assets.icons.icon2} alt="" />
             <img src={assets.icons.icon3} alt="" />
           </div>
