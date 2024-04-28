@@ -18,7 +18,7 @@ class LandingPage extends React.Component {
             <span className="material-symbols-outlined">
               note_add
             </span>
-            <small>New Note</small>
+            <small>Begin to use</small>
           </Link>
         </div>
         <footer className='info-dev'>
