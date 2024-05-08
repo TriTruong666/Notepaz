@@ -8,7 +8,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<LandingPage />}></Route>
-      <Route path="note" element={<Notepaz />}></Route>
+      <Route path="/note" element={<Notepaz />}></Route>
     </Routes>
   </BrowserRouter>
 )
