@@ -1,4 +1,5 @@
 import '../../styles/LandingPage.css';
+import "../../styles/responsive/LandingResponsive.css";
 import React from 'react';
 import assets from '../../storage/assets';
 import { Link } from 'react-router-dom';
